@@ -49,7 +49,7 @@ def consultar(n):
     # Utilizar la variable global data_dist
     global data_dist , result , db
     result = db.find_one(sort=[('updated_at', -1)])
-    distancia = int(result['distancia'])
+    distancia = float(result['distancia'])
     data_dist.append(distancia)
     
     # Crear el objeto de figura de Plotly
