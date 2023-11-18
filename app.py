@@ -60,13 +60,13 @@ def consultar(n):
         type="line",
         x0=0,
         x1=len(data_dist),
-        y0=1600,
-        y1=1600,
+        y0=8,
+        y1=8,
         line=dict(color="red", width=2),
     )
     
     # Agregar un texto según la condición
-    if distancia >= 1600:
+    if distancia >= 8:
         alerta_texto = html.Span("ALERTA", style={'color': 'red', 'font-size': '24px'})
     else:
         alerta_texto = html.Span("VAMOS BIEN", style={'color': 'green', 'font-size': '24px'})
