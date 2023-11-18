@@ -31,7 +31,7 @@ app.layout = dbc.Container([
     dcc.Graph(id='asentamiento'),
     dcc.Interval(
         id='interval-component',
-        interval=1 * 500,  # en milisegundos, actualiza cada 1 segundo
+        interval=1 * 4500,  # en milisegundos, actualiza cada 1 segundo
         n_intervals=0
     ),
     html.Div(id='alerta-texto', style={'text-align': 'center', 'margin-top': '10px'})
